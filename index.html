@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    
+</head>
+<body class="bg-skyBlue">
+    <div class="outer flex justify-center min-h-screen">
+        <div class="card max-w-[100rem] flex flex-col  p-16">
+            <div class="logo">
+                <img src="assets/ytulogo 1.png" alt="">
+            </div> 
+            <div class="main flex flex-col mt-8 bg-white/44 rounded-xl w-full min-w-[22rem]">
+                <div class="header bg-white rounded-t-xl border-b-4 border-headingBlue px-12">
+                    <h1 class="lg:text-4xl md:text-2xl  text-lg text-headingBlue font-bold  text-center py-4 ">
+                        YILDIZ TEKNİK ÜNİVERSİTESİ FEN-EDEBİYAT FAKÜLTESİ ÇAKIŞAN DERS EKLEME DİLEKÇESi</h1>
+                </div>
+                <div class="form flex flex-col  md:py-12 items-center ">
+                    <div class="flex flex-col items-center space-y-4 p-2 w-full  max-w-100 ">
+                        <div class="ad-soyad relative bg-white w-full border-b-2 border-underlineColor h-12 flex items-center rounded-t-lg">
+                            <input id="ad-soyad" type="text" placeholder="Donem" class="w-full peer md:text-lg text-base outline-0 px-2 mt-2 placeholder-transparent
+                                ">
+                                <label for="ad-soyad" class="absolute text-textColor left-1 top-0 text-xs peer-placeholder-shown:left-3 peer-placeholder-shown:top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:text-placeholder peer-focus:left-1 peer-focus:top-0 peer-focus:text-xs peer-focus:text-textColor transition-all duration-200" >Ad Soyad</label>
+                        </div>
+                        <div class="ogrenci-no relative rounded-t-lg  w-full bg-white h-12  border-b-2 border-underlineColor flex items-center">
+                            <input id="ogrenci-no" type="text" placeholder="Donem" class="w-full peer md:text-lg text-base outline-0 px-2 mt-2 placeholder-transparent
+                                ">
+                                <label for="ogrenci-no" class="absolute text-textColor left-1 top-0 text-xs peer-placeholder-shown:left-3 peer-placeholder-shown:top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:text-placeholder peer-focus:left-1 peer-focus:top-0 peer-focus:text-xs peer-focus:text-textColor transition-all duration-200" >Öğrenci Numarası</label>
+                        </div>
+                        <div class="bolum border-underlineColor relative rounded-t-lg w-full bg-white h-12  flex border-b-2 items-center">
+                            <input id="bolum" type="text" placeholder="Donem" class="w-full peer md:text-lg text-base outline-0 px-2 mt-2 placeholder-transparent
+                                ">
+                            <label for="bolum" class="absolute text-textColor left-1 top-0 text-xs peer-placeholder-shown:left-3 peer-placeholder-shown:top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:text-placeholder peer-focus:left-1 peer-focus:top-0 peer-focus:text-xs peer-focus:text-textColor transition-all duration-200" >Bölüm</label>
+                        </div>
+                        <div class="cep-no relative border-underlineColor rounded-t-lg w-full bg-white h-12  flex border-b-2 items-center">
+                            <input type="text" placeholder="Donem" class="w-full peer md:text-lg text-base outline-0 px-2 mt-2 placeholder-transparent
+                                ">
+                            <label class="absolute text-textColor left-1 top-0 text-xs peer-placeholder-shown:left-3 peer-placeholder-shown:top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:text-placeholder peer-focus:left-1 peer-focus:top-0 peer-focus:text-xs peer-focus:text-textColor transition-all duration-200" >Cep Telefonu</label>
+                        </div>
+                        <div class="e-posta relative rounded-t-lg border-underlineColor w-full bg-white h-12  flex border-b-2 items-center">
+                            <input id="eposta" type="text" placeholder="E-Posta" class="w-full peer md:text-lg text-base outline-0 px-2 mt-2 placeholder-transparent
+                                ">
+                            <label for="eposta" class="absolute text-textColor left-1 top-0 text-xs peer-placeholder-shown:left-3 peer-placeholder-shown:top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:text-placeholder peer-focus:left-1 peer-focus:top-0 peer-focus:text-xs peer-focus:text-textColor transition-all duration-200" >E-posta</label>
+                        </div>
+                        <div class="flex flex-col md:flex-row  space-x-0 space-y-4 lg:space-y-0 md:space-x-12  w-full ">
+                            <div class="ogretim-yili relative rounded-t-lg bg-white  w-full h-12 border-underlineColor border-b-2 flex items-center ">
+                                <input id="ogretim-yili" type="text" placeholder="Ogretim Yili" class="peer mt-2 placeholder-transparent w-full  md:text-lg text-base outline-0 px-2">
+                                <label for="ogretim-yili" class="absolute text-textColor left-1 top-0 text-xs peer-placeholder-shown:left-3 peer-placeholder-shown:top-3 peer-placeholder-shown:text-lg peer-placeholder-shown:text-placeholder peer-focus:left-1 peer-focus:top-0 peer-focus:text-xs peer-focus:text-textColor transition-all duration-200" for="ogretim-yili">Öğretim Yılı</label>
+                            </div>
+                            <div class="donem relative border-underlineColor bg-white w-full rounded-t-lg h-12 flex border-b-2 items-center">
+                                <select id="donem" class="w-full peer md:text-lg text-base outline-0 px-2 mt-2 bg-white text-placeholder">
+                                    <option value="" disabled selected hidden>Dönem</option>
+                                    <option value="Güz">Güz</option>
+                                    <option value="Bahar">Bahar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="text-textColor text-xs">*Lütfen daha önce almış olduğunuz ders ile ilgili eğitim öğretim yılı ve dönem bilgilerini giriniz</p>
+                    </div>
+                    <div id="ders-ekle" class="ders-ekle max-w-100  flex flex-col items-center p-2 w-full">
+                        <div class="header w-full  bg-white h-12 flex justify-center items-center rounded-t-lg  border-b-2 border-headingBlue">
+                            <h2 class="text-headingBlue font-semibold md:text-xl text-lg ">OBS'den Seçilen Ders</h2>
+                        </div>
+                        <div class="flex items-center w-full h-10 bg-white border-b-1 border-headingBlue ">
+                            <div class="kod border-r tracking-tighter flex h-full items-center  px-2 md:tracking-normal w-3/10 ">
+                                <h3>Ders Kodu</h3>
+                            </div>
+                            <div class="adi px-2  flex items-center w-3/5 h-full  ">
+                                <h3 class="w-full ">Ders Adı</h3>
+                            </div>
+                        </div>
+                        <div class="flex border rounded-lg mt-4 border-textColor items-center h-10 bg-white">
+                            <div class="ders-kodu-input flex items-center border-r border-textColor h-full w-3/10  px-2">
+                                <input type="text" placeholder="0000000" maxlength="7" class="w-full outline-0 placeholder-textColor">
+                            </div>
+                            <div class="ders-adi-input flex items-center w-3/5 px-2 h-full">
+                                <input type="text" placeholder="Ders Adı" maxlength="40" class="w-full placeholder-textColor outline-0">
+                            </div>
+                            
+                        </div>
+                        <div id="ekle" class="ders-ekle-buton flex px-4 border py-2 mt-4 rounded-full bg-white text-headingBlue  justify-center cursor-pointer hover:bg-white/10 duration-200">
+                            <p>Ders Ekle</p>
+                            <img src="assets/icon/Plus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="ders-sil max-w-100  flex flex-col items-center  p-2 w-full">
+                        <div class="header w-full  bg-white h-12 flex justify-center items-center rounded-t-lg  border-b-2 border-headingBlue">
+                            <h2 class="text-headingBlue font-semibold md:text-xl text-lg ">Çakışma Nedeniyle Eklenecek Ders</h2>
+                        </div>
+                        <div class="flex items-center w-full  h-10 bg-white border-b-1 border-headingBlue">
+                            <div class="kod border-r tracking-tighter flex h-full items-center px-2 md:tracking-normal text-sm md:text-base  w-3/10 ">
+                                <h3>Ders Kodu</h3>
+                            </div>
+                            <div class="adi px-2  flex items-center w-3/5 h-full  ">
+                                <h3 class="w-full ">Ders Adı</h3>
+                            </div>
+                            <div class="grup px-2 h-full flex items-center w-3/10 border-l ">
+                                <h3>Grup</h3>
+                            </div>
+                        </div>
+                        <div class="flex w-full border border-textColor relative h-10 items-center bg-white mt-4 rounded-lg ">
+                            <div class="ders-kodu w-3/10 border-r flex items-center h-full px-2">
+                                <input type="text" placeholder="0000000" class="w-full placeholder-textColor outline-0">
+                            </div>
+                            <div class="ders-adi w-3/5 px-2 h-full flex border-r border-textColor items-center">
+                                <input type="text" placeholder="Ders Adı" class="w-full placeholder-textColor outline-0">
+                            </div>
+                            <div class="grup w-3/10 px-2 h-full flex items-center">
+                                <input type="text" placeholder="Grup" maxlength="3" class="w-full outline-0 placeholder-textColor">
+                            </div>
+                            
+                        </div>
+                        <div id="cakisan-ders-ekle" class="cakisan-ders-ekle flex px-4 border py-2 rounded-full mt-4 text-headingBlue bg-white cursor-pointer justify-center hover:bg-white/10 duration-200">
+                            <p>Ders Ekle</p>
+                            <img src="assets/icon/Plus.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto mt-12">
+                <button class="flex w-full bg-bgColor space-x-4 px-8 border cursor-pointer justify-center items-center py-4 rounded-xl hover:bg-headingBlue duration-200">
+                    <p class="text-lg text-white">PDF Oluştur</p>
+                    <img src="assets/DownloadSimple.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
